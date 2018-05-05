@@ -1,0 +1,6 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "filepath": "{src,__{tests,mocks}__}/**/*.tsx"
+}

@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    [
+      "import", {
+      	// read more on antd babel-plugin-import:
+      	// https://github.com/ant-design/babel-plugin-import#usage
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": "css"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2015", "dom"]
+  },
+  "include": ["./src/**/*", "./typings/*.d.ts"],
+  "exclude": [".git", ".cache", ".storybook", "dist", "node_modules"],
+  "parcelTsPluginOptions": {
+    // set `transpileOnly` to true to disable type checking
+    "transpileOnly": false
+  }
+}
