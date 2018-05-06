@@ -7,7 +7,7 @@
     "precommit": "./node_modules/pretty-quick/bin/pretty-quick.js --staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/pretty-quick/bin/pretty-quick.js",
-    "start": "./node_modules/parcel-bundler/bin/cli.js index.html",
+    "start": "./node_modules/parcel-bundler/bin/cli.js serve index.html",
     "build": "./node_modules/parcel-bundler/bin/cli.js build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o build"
@@ -39,6 +39,7 @@
     "@storybook/storybook-deployer": "^2.2.0",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
+    "@types/react-loadable": "^5.3.4",
     "@types/react-router-dom": "^4.2.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -57,12 +58,12 @@
     "parcel-plugin-typescript": "^0.7.1",
     "prettier": "1.12.1",
     "pretty-quick": "^1.4.1",
+    "react-loadable": "^5.4.0",
     "style-loader": "^0.19.1",
     "ts-import-plugin": "^1.4.3",
     "ts-loader": "^3.2.0",
     "typescript": "^2.8.3",
     "typescript-eslint-parser": "^15.0.0",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.10.0"
+    "url-loader": "^0.6.2"
   }
 }

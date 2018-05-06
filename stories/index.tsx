@@ -25,5 +25,6 @@ storiesOf('Demo', module)
 	.add('AntDesign', () => (
 		<AntDesign 
 			onSwitch={action('switch changed')}
-			onRowClick={action('row clicked')} />
+			onRowClick={action('row clicked')} 
+			onRateChange={action('rate changed')} />
 	))

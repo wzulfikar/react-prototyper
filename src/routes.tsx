@@ -5,6 +5,8 @@ import About from './scenes/About'
 import AntDesignDemo from './scenes/AntDesignDemo'
 import PageNotFound from './components/layout/PageNotFound'
 
+import withLoadable from './lib/withLoadable'
+
 export enum NavbarPositionEnum {
   LEFT,
   RIGHT,
@@ -41,6 +43,13 @@ const routes: Array<IRouteType> = [
     exact: true,
     position: NavbarPositionEnum.RIGHT,
     render: props => <AntDesignDemo {...props} />,
+  },
+  {
+    title: 'Loadable Component',
+    path: '/loadable-component-demo',
+    exact: true,
+    position: NavbarPositionEnum.RIGHT,
+    render: () => withLoadable(import('./components/LoadableDemo')),
   },
   {
     title: 'Page Not Found',

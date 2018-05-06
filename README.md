@@ -37,6 +37,8 @@
         ▾ layout/
             *.tsx
         *.tsx
+    ▾ lib/
+        *.tsx
     ▾ scenes/
         *.tsx
     ▾ styles/
@@ -60,6 +62,12 @@
 * `src/`
   This directory is where you'll spend the most of your time developing the code.
 
+  * lib: internal library. ie, `withLoadable.tsx`
+  * scenes
+  * styles
+  * components
+  * assets: images, favicons, other static files
+
 * `stories/`  
   Components you want to put in React Storybook. To make sure that your component is modular, only import components from `src/components` (not `src/scenes`) into storybook since those components are supposed to be stateless components.
 
@@ -82,17 +90,44 @@
 
 ### Case Study
 
-#### 1. Creating Dynamic Route
+<details>
+<summary>1. Creating Dynamic Route</summary>
+_WIP_
+</details>
 
+<details>
+<summary>2. Using React Storybook</summary>
+_WIP_
+</details>
+
+<details>
+<summary>3. Code Splitting (Lazy Loading Modules/Components)</summary>
 _WIP_
 
-#### 2. Using React Storybook
+on first build:
 
+* build app.js (main entry)
+* build dynamic import (LoadableDemo, etc.)
+* verify by checking `dist/` directory
+
+on initial load: only load main entry (app.js)
+
+when visiting a page that contains loadable component, load the component. how to validate:
+
+* open developer tool
+* open "Sources" tab > `src/components/`
+* you shouldn't see `LoadableDemo.tsx`, because it's not loaded yet
+* click "Loadable Component" in navbar
+* check "Sources" tab > `src/components/`
+* now you should see `LoadableDemo.tsx` there because it's loaded!
+* also check in "Network" tab, there's should be a GET request to load `LoadableDemo.[random number].js` that indicates the script was lazy-loaded
+
+</details>
+
+<details>
+<summary>4. Deploying The App (to surge.sh)</summary>
 _WIP_
-
-#### 3. Deploying the Webapp
-
-_WIP_
+</details>
 
 ---
 
