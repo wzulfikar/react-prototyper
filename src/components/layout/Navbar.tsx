@@ -13,7 +13,7 @@ export const Navbar = (props: INavbarProps) => (
   <nav className="navbar is-transparent">
     <div className="navbar-brand">
       <Link className="navbar-item" to="/">
-        <img src={logo} alt="IIUM Payment" height="50" />
+        <img src={logo} alt="React Prototyper" height="50" />
       </Link>
       <div
         className="navbar-burger burger"
@@ -29,7 +29,8 @@ export const Navbar = (props: INavbarProps) => (
       <div className="navbar-start">
         {props.routes.map(
           (route, i) =>
-            route.path && route.position == NavbarPositionEnum.LEFT && (
+            route.path &&
+            route.position == NavbarPositionEnum.LEFT && (
               <Link key={i} className="navbar-item" to={route.path}>
                 {route.title}
               </Link>
@@ -41,7 +42,8 @@ export const Navbar = (props: INavbarProps) => (
       <div className="navbar-end">
         {props.routes.map(
           (route, i) =>
-            route.path && route.position == NavbarPositionEnum.RIGHT && (
+            route.path &&
+            route.position == NavbarPositionEnum.RIGHT && (
               <Link key={i} className="navbar-item" to={route.path}>
                 {route.title}
               </Link>

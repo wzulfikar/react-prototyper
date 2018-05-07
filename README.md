@@ -17,6 +17,7 @@
   * react router
   * lint via `npm run lint` (using local `pretty-quick`)
   * run `pretty-quick` on precommit via husky (local)
+  * run test using jest (local). read more on jest: https://facebook.github.io/jest/en/ (ie. `jest src/services/hackernews/`)
 
 ### Installation
 
@@ -40,6 +41,8 @@
     ▾ lib/
         *.tsx
     ▾ scenes/
+        *.tsx
+    ▾ services/
         *.tsx
     ▾ styles/
         *.less|sass|css
