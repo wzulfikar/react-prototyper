@@ -10,13 +10,6 @@ if [ -z $1 ]; then
 	exit
 fi
 
-echo "preparing deployment for surge.sh"
-echo "- cleaning dist/ directory"
-rm -r dist
-
-echo "- building app"
-parcel build index.html
-
 echo "- copying dist/index.html to dist/200.html for client-side routing"
 cp dist/index.html dist/200.html
 

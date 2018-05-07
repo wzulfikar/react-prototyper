@@ -8,9 +8,9 @@
     "test": "./node_modules/jest/bin/jest.js",
     "lint": "./node_modules/pretty-quick/bin/pretty-quick.js",
     "start": "./node_modules/parcel-bundler/bin/cli.js serve index.html",
-    "build": "./node_modules/parcel-bundler/bin/cli.js build",
+    "build": "rm -r dist && ./node_modules/parcel-bundler/bin/cli.js build index.html",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o build"
+    "build-storybook": "build-storybook -c .storybook -o dist/storybook"
   },
   "jest": {
     "transform": {

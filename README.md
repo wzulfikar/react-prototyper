@@ -8,6 +8,7 @@
 * contains case study to familiarize with real world workflow
 * uses local parcel
 * storybook via local webpack (also serves as a comparison between parcel)
+* surge demo: https://react-prototyper.surge.sh
 
 * What's included?
   * bulma

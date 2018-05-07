@@ -54,6 +54,7 @@ const withLoadable = (
   let opts = {
     loader: () => importComponent,
     loading: Loading,
+    timeout: 500,
   } as LoadableComponentOpts
 
   if (exportedName) {

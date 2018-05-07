@@ -19,7 +19,7 @@ export const fetchTopStories: any = async (
 
   const client = axios.create({
     baseURL: 'https://hacker-news.firebaseio.com/v0',
-    timeout: 2000,
+    timeout: 5000,
   })
 
   let stories: Array<IStory> = []

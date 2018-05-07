@@ -31,6 +31,13 @@ const routes: Array<IRouteType> = [
     render: props => <Home {...props} />,
   },
   {
+    title: 'HackerNews',
+    path: '/hackernews',
+    exact: true,
+    position: NavbarPositionEnum.LEFT,
+    render: props => withLoadable(import('./scenes/HackerNews'), props),
+  },
+  {
     title: 'About',
     path: '/about',
     exact: true,

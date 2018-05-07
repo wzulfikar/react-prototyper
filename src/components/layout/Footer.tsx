@@ -5,11 +5,11 @@ const Footer = () => (
     <div className="container">
       <div className="content has-text-centered has-text-light">
         <p>
-          <b>React Prototyper</b> · All rights reserved.
+          <b>React Prototyper</b> · All rights reserved
         </p>
       </div>
     </div>
   </footer>
 );
 
-export default Footer;
+export default Footer
